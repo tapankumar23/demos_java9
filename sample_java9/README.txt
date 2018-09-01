@@ -21,3 +21,18 @@ Transitive Dependencies
 	 C get A
 	   
 A Transfer of dependencies to dependent modules
+
+
+Qualified Exports
+=================
+* Qualified exports reverse the dependency flaw.
+* Exporting module should not know which modules are depending upon them, A Qualified export breaks this Rule.
+
+
+Service Dependencies
+====================
+* Service loader does not replace dependency injection framework.
+* Ideal for standalone java SE applications
+
+Optional Dependencies
+=====================

@@ -7,5 +7,6 @@ module com.red30tech.chassis {
 	
 	//Classes Exposed by this Module
 	provides	com.red30tech.chassis.api.Chassis with 
-				com.red30tech.chassis.type.SuvChassis;
+				com.red30tech.chassis.type.SuvChassis,
+				com.red30tech.chassis.type.SedanChassis;
 }
