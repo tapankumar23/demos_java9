@@ -11,3 +11,13 @@ Keywords
 
 
 Golden Rule >>>>> "Export a Package but Require a Module"
+
+
+
+Transitive Dependencies
+=======================
+* If A requires B
+	 C requires B
+	 C get A
+	   
+A Transfer of dependencies to dependent modules
