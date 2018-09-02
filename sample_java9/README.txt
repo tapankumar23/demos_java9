@@ -1,8 +1,10 @@
 Terms
 =====
-	Classes		=> .
-	Package		=> Container of Classes
-	Modules		=> Container of Packages
+	Classes			=> .
+	Package			=> Container of Classes
+	Modules			=> Container of Packages (A group of closely related packages and resources along with a new module descriptor file.)
+	Dependencies	=> A Java code might contain references to other Java projects(external or internal)
+	 
 
 Keywords
 ========
@@ -11,6 +13,7 @@ Keywords
 
 
 Golden Rule >>>>> "Export a Package but Require a Module"
+
 
 
 
@@ -87,3 +90,12 @@ src/com.red30tech.axle/com/red30tech/axle/api
 src/com.red30tech.axle/com/red30tech/axle/api/TestAxle.java
 src/com.red30tech.axle/com/red30tech/axle/api/Axle.java
 
+
+
+
+
+
+Useful Links
+============
+https://www.baeldung.com/java-9-modularity
+https://www.networknt.com/architecture/api-adoption/
