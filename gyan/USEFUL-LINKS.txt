@@ -1,0 +1,11 @@
+Useful Links
+============
+
+GIT
+https://www.atlassian.com/git/tutorials/install-git
+https://www.atlassian.com/git/tutorials/setting-up-a-repository
+
+
+MODULARITY AND API
+https://www.baeldung.com/java-9-modularity
+https://www.networknt.com/architecture/api-adoption/

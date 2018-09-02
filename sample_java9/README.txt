@@ -1,5 +1,3 @@
-Note:: At the end of this page you will find some useful links.
-
 #####################
 ##Project Structure##
 #####################
@@ -45,14 +43,3 @@ src/com.red30tech.axle/com/red30tech/axle
 src/com.red30tech.axle/com/red30tech/axle/api
 src/com.red30tech.axle/com/red30tech/axle/api/TestAxle.java
 src/com.red30tech.axle/com/red30tech/axle/api/Axle.java
-
-
-
-
-
-
-Useful Links
-============
-https://www.atlassian.com/git/tutorials/install-git
-https://www.baeldung.com/java-9-modularity
-https://www.networknt.com/architecture/api-adoption/
