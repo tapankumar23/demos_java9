@@ -1,0 +1,83 @@
+	|\
+====| \
+		S	-> Single Responsibility Principle
+====| /	
+	|/
+	
+	|\
+====| \
+		O	-> Open / Closed Principle
+====| /	
+	|/
+	
+	|\
+====| \
+		L	-> Liskov Substitution Principle 
+====| /	
+	|/
+	
+	|\
+====| \
+		I	-> Interface Segregation Principle
+====| /	
+	|/
+	
+	|\
+====| \
+		D	-> Dependency Inversion Principle
+====| /	
+	|/
+	
+/***********************	S O L I D  hai Boss		************************/
+
+S	-> Single Responsibility Principle
+
+
+
+##############################################################################
+O	-> Open / Closed Principle
+
+
+
+##############################################################################
+L	-> Liskov Substitution Principle 
+
+
+
+##############################################################################
+I	-> Interface Segregation Principle
+
+* Make fine grained interfaces that are client 
+* Client should not be forced to implement interfaces that they do not use
+* In other words, its better to have smaller interfaces, than fewer, fatter interface
+* By breaking down interfaces, we are favor COMPOSITION instead of INHERITANCE
+* Decoupling over Coupling
+
+Ex : 
+Interface Segregation NOT Applied
+---------------------------------
+interface Animal {
+	eat();
+	sleep();
+	walk();
+}
+
+This would mean that we have a MONOLTHIC interface called ANIMAL, 
+which would NOT be the perfect ABSTRACTION, because some animals can FLY.
+
+Interface Segregation APPLIED
+-----------------------------
+Breaking this monolithic interface into smaller interfaced based by ROLE.
+ 
+interface CanEat	{ eat(); } 
+interface CanSleep	{ sleep(); } 
+interface CanWalk	{ walk(); }
+ 
+This would then make it possible for a species to EAT, SLEEP and for example FLY.
+A species would be a combination of ROLES, instead of being characterized as an ANIMAL.
+At a larger scale, MICROSERVICES are a very similar case, they are pieces of a system separated by RESPONSIBILITIES, instead of being a great MONOLITH.
+
+##############################################################################
+D	-> Dependency Inversion Principle
+
+##############################################################################
