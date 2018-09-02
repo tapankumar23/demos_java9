@@ -6,6 +6,36 @@ Terms
 	Dependencies	=> A Java code might contain references to other Java projects(external or internal)
 	 
 
+Why Modularity?
+===============
+Before understanding modularity we need to understand Why modularity is it really needed?
+What is the PROBLEM with current system?
+
+
+Problem
+========
+What the HELL
+Classpath Hell ~ Dependency Hell ~ JAR Hell
+
+* A  JAR cannot express which other JARs it depends on in a way that the JVM will understand.
+* Developers would have to do this manually by reading the documentation, finding the correct projects, 
+  downloading the JARs and adding them to the project's classpath.
+  
+
+Shadowing
+Sometimes different JARs on the classpath contain classes with the same fully-qualified name.
+This can happen for different reasons, 
+	e.g.	when there are two different versions of the same library, 
+			when a fat JAR contains dependencies that are also pulled in as standalone JARs, 
+			when a library is renamed and unknowingly added to the classpath twice.
+
+
+https://dzone.com/articles/what-is-jar-hell
+https://blog.codefx.org/java/jar-hell/
+https://blog.codefx.org/java/dev/will-there-be-module-hell/
+
+
+
 Keywords
 ========
 	export		=> Used inside module-info.java to export packages inside modules
@@ -13,6 +43,15 @@ Keywords
 
 
 Golden Rule >>>>> "Export a Package but Require a Module"
+
+
+List of Dependencies
+====================
+* Transitive Dependencies
+* Qualified Dependencies
+* Service Dependencies
+* Optional Dependencies
+* Runtime Dependencies
 
 
 
