@@ -1,0 +1,14 @@
+If you want to perform some changes to the main branch in a repository (not necessarily master branch)
+For our current scenario, I am considering that we want to make changes to "master" branch
+
+following steps you perform
+1. git pull master
+2. git branch TEMP-MY-CHANGES
+3. git commit -m "Content regarding the changes"
+4. git push
+
+Now we create a pull request to merge are changes 
+
+master <--  TEMP-MY-CHANGES
+
+Github will show file by file differences in 3rd tab of pull-request (https://github.com/tapankumar23/pure_awesomeness_devs/pulls)
