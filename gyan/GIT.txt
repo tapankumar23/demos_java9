@@ -1,3 +1,61 @@
+Basics Commands
+===============
+
+# To add a file not staged:
+$ git add <file or directory name>
+
+$ git status
+
+# Adding a commit with message
+$ git commit -m "Commit message in quotes"
+
+# Running git config globally
+$ git config --global user.email "my@emailaddress.com"
+$ git config --global user.name "Brian Kerr"
+
+# Running git config on the current repository settings
+$ git config user.email "my@emailaddress.com"
+$ git config user.name "Brian Kerr"
+
+# Create a new branch
+$ git branch <branch_name>
+
+# List all remote or local branches
+$ git branch -a
+
+# Delete a branch
+$ git branch -d <branch_name>
+
+# Switching to branch 'new_feature'
+$ git checkout new_feature
+Switched to branch 'new_feature'
+
+# Creating and switching to branch 'staging'
+$ git checkout -b staging
+Switched to a new branch 'staging'
+
+
+
+Making Changes To a branch master
+=================================
+
+	master
+		|
+		|
+		|\
+		| \
+		|  \
+		|  | <- This is TEMP-MY-CHANGES branch created from master
+		|  |
+		|  |
+		|  |
+		|  |
+		|  /
+		| /
+		|/ <-- Merging TEMP-MY-CHANGES
+		|
+		|
+
 If you want to perform some changes to the main branch in a repository (not necessarily master branch)
 For our current scenario, I am considering that we want to make changes to "master" branch
 
@@ -12,3 +70,7 @@ Now we create a pull request to merge are changes
 master <--  TEMP-MY-CHANGES
 
 Github will show file by file differences in 3rd tab of pull-request (https://github.com/tapankumar23/pure_awesomeness_devs/pulls)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
