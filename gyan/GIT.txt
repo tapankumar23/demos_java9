@@ -64,7 +64,8 @@ following steps you perform
 2. git branch TEMP-MY-CHANGES
 3.	<Makes changes to the files you want to change>
 4. git commit -m "Content regarding the changes"
-5. git push
+5. git push 
+   (if the branch does not exists use this "git push --set-upstream origin TAP-GYAN-UPD-V1")
 
 Now we create a pull request to merge are changes 
 
