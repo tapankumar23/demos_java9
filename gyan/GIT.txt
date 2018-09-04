@@ -62,8 +62,9 @@ For our current scenario, I am considering that we want to make changes to "mast
 following steps you perform
 1. git pull master
 2. git branch TEMP-MY-CHANGES
-3. git commit -m "Content regarding the changes"
-4. git push
+3.	<Makes changes to the files you want to change>
+4. git commit -m "Content regarding the changes"
+5. git push
 
 Now we create a pull request to merge are changes 
 
