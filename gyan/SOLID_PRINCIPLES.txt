@@ -37,11 +37,10 @@
 /***************************************************************************/
 S	-> Single Responsibility Principle
 
-Single responsibility principle
-The single responsibility principle is a computer programming principle that states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. All its services should be narrowly aligned with that responsibility. Robert C. Martin expresses the principle as, "A class should have only one reason to change."
-The term was introduced by Robert C. Martin in an article by the same name as part of his Principles of Object Oriented Design,[2] made popular by his book Agile Software Development, Principles, Patterns, and Practices. Martin described it as being based on the principle of cohesion.
-
-Martin defines a responsibility as a reason to change, and concludes that a class or module should have one, and only one, reason to be changed (i.e. rewritten). As an example, consider a module that compiles and prints a report. Imagine such a module can be changed for two reasons. First, the content of the report could change. Second, the format of the report could change. These two things change for very different causes; one substantive, and one cosmetic. The single responsibility principle says that these two aspects of the problem are really two separate responsibilities, and should therefore be in separate classes or modules. It would be a bad design to couple two things that change for different reasons at different times.
+Single responsibility principle -> "A class should have only one reason to change."
+* Every module or class should have responsibility over a single part of the functionality provided by the software, 
+* That esponsibility should be entirely encapsulated by the class. 
+* All its services should be narrowly aligned with that responsibility. 
 
 ##############################################################################
 O	-> Open / Closed Principle
