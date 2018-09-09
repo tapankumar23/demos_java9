@@ -1,28 +1,36 @@
 Terms
 =====
-	Classes			=> .
-	Package			=> Container of Classes
+	Classes			=> Blueprint or a template creating different objects 
+	Package			=> Container of Classes (A namespace a set of related class and interface)
 	Modules			=> Container of Packages (A group of closely related packages and resources along with a new module descriptor file.)
 	Dependencies	=> A Java code might contain references to other Java projects(external or internal)
-	 
+	Classpath		=> Its an environment variable which is used by Java Compiler to find the Path
+	
+What Problem does Modularity Addresses?
+=======================================
+* The problems related to class path have been in Java since the birth of the language. 
+* The Java Virtual Machine (JVM) doesn’t know that a JAR on the class path depends on another JAR. 
+* JVM simply loads a group of JARs, but it doesn’t check their dependencies. 
+* When a JAR is missing, the JVM breaks the execution at runtime. 
 
-Why Modularity?
-===============
-Before understanding modularity we need to understand Why modularity is it really needed?
-What is the PROBLEM with current system?
+* The JARs can’t define concepts related to accessibility. 
+* They don’t define accessibility constraints like public or private. 
+* The entire content of all JARs on the class path is completely visible to all the other JARs from the class path. 
+* There’s no way to declare that some classes in a JAR are private. 
+* All classes and methods are public related to the class path, which leads to a problem sometimes called JAR hell. 
 
-
-Problem
-========
-What the HELL
+JAR HELL
+--------
 Classpath Hell ~ Dependency Hell ~ JAR Hell
-
+* Conflicts between versions of JARs can arise, especially when two different versions of the same library are required.
+* Loading the classes from the class path is a slow process.
+* The JVM doesn’t know where exactly the class is located and therefore has to check all the existing files from the class path. 
 * A  JAR cannot express which other JARs it depends on in a way that the JVM will understand.
 * Developers would have to do this manually by reading the documentation, finding the correct projects, 
   downloading the JARs and adding them to the project's classpath.
-  
 
 Shadowing
+---------
 Sometimes different JARs on the classpath contain classes with the same fully-qualified name.
 This can happen for different reasons, 
 	e.g.	when there are two different versions of the same library, 
@@ -30,14 +38,12 @@ This can happen for different reasons,
 			when a library is renamed and unknowingly added to the classpath twice.
 
 
-https://dzone.com/articles/what-is-jar-hell
-https://blog.codefx.org/java/jar-hell/
-https://blog.codefx.org/java/dev/will-there-be-module-hell/
+############################################################################################################################################
 
 
 
 Keywords
-========
+--------
 	export		=> Used inside module-info.java to export packages inside modules
 	require		=> Used inside module-info.java to use packages of other modules
 
@@ -46,7 +52,7 @@ Golden Rule >>>>> "Export a Package but Require a Module"
 
 
 List of Dependencies
-====================
+---------------------
 * Transitive Dependencies
 * Qualified Dependencies
 * Service Dependencies
@@ -57,7 +63,7 @@ List of Dependencies
 
 
 Transitive Dependencies
-=======================
+-----------------------
 * If A requires B
 	 C requires B
 	 C get A
