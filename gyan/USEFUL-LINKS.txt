@@ -2,10 +2,17 @@ Useful Links
 ============
 
 GIT
+---
 https://www.atlassian.com/git/tutorials/install-git
 https://www.atlassian.com/git/tutorials/setting-up-a-repository
 
 
 MODULARITY AND API
+------------------
 https://www.baeldung.com/java-9-modularity
 https://www.networknt.com/architecture/api-adoption/
+
+
+https://dzone.com/articles/what-is-jar-hell
+https://blog.codefx.org/java/jar-hell/
+https://blog.codefx.org/java/dev/will-there-be-module-hell/

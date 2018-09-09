@@ -1,0 +1,11 @@
+Java 9
+======
+Modularity (Project Jigsaw)
+* Enabled understanding of dependencies across modules.
+* Java better able to scale down to smaller devices while security and performance are improved.
+* Allows illegal reflective access for code on the class path, used by the JRE to search for classes and resource files. This capability will be disallowed after Java 9.
+* 
+
+Compiler improvements for Java 9 code
+* Ahead-of-time (AoT) compilation. 
+* Just-in-time (JIT) compilers are fast, but Java programs have become so large that it takes a long time for the JIT to fully warm up, leaving some Java methods uncompiled and weakening performance.

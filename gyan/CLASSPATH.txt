@@ -1,0 +1,36 @@
+https://www.youtube.com/watch?v=VOqfsDdalI8
+
+
+src/com.aswm.dev/com/awsm/dev/cptest/first
+src/com.aswm.dev/com/awsm/dev/cptest/first/HelloWorld.java
+
+src/com.aswm.dev/com/awsm/dev/cptest/second
+src/com.aswm.dev/com/awsm/dev/cptest/second/HelloWorld.java
+
+
+Above we have 2 HelloWorld Class in different package we will create 2 different Jar files using them.
+
+STEP 1 : Create Jar Files
+--------------------------
+dev/first$ jar cvf first.jar *.class
+dev/second$ jar cvf second.jar *.class
+
+STEP 2 : Execute the HelloWorld in the first package
+----------------------------------------------------
+dev/first$ java HelloWorld
+
+
+STEP 3 : Execute the HelloWorld in the second package
+-----------------------------------------------------
+dev/second$ java HelloWorld
+
+
+STEP 4 : Execute first with classpath set as second.jar
+-------------------------------------------------------
+dev/first$ set CLASSPATH=Location/of/the/second.jar
+dev/first$ java HelloWorld
+
+STEP 4 : Execute first with classpath set as second.jar
+-------------------------------------------------------
+dev/first$ java -classpath . HelloWorld
+dev/first$ java HelloWorld
