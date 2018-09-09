@@ -16,3 +16,8 @@ https://www.networknt.com/architecture/api-adoption/
 https://dzone.com/articles/what-is-jar-hell
 https://blog.codefx.org/java/jar-hell/
 https://blog.codefx.org/java/dev/will-there-be-module-hell/
+
+SOLID PRINCIPLES
+----------------
+https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
+
