@@ -21,3 +21,8 @@ SOLID PRINCIPLES
 ----------------
 https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
 
+
+SQL
+---
+https://www.toptal.com/sql/interview-questions
+http://www.complexsql.com/complex-sql-queries-examples-with-answers/complex-sql-for-interviews/
