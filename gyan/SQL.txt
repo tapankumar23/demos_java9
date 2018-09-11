@@ -1,0 +1,20 @@
+Topic
+=====
+
+1. ISOLATION LEVEL
+	https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/
+	https://pdfs.semanticscholar.org/presentation/d417/419304b62b983de927ade9a2c6282abee0e4.pdf
+	https://lagunita.stanford.edu/assets/courseware/v1/9c62ee3fb817985803b746389e8b991c/c4x/DB/Indexes/asset/TransactionsIsolation.pdf
+	
+	ACID : 
+	
+	Isolation level : 
+	
+	READ UNCOMMITTED: 
+
+	READ COMMITTED:
+
+	REPEATABLE READ:
+
+	SERIALIZABLE:
+	
