@@ -26,3 +26,6 @@ SQL
 ---
 https://www.toptal.com/sql/interview-questions
 http://www.complexsql.com/complex-sql-queries-examples-with-answers/complex-sql-for-interviews/
+https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/
+https://pdfs.semanticscholar.org/presentation/d417/419304b62b983de927ade9a2c6282abee0e4.pdf
+	
