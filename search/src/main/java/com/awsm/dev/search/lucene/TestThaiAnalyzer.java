@@ -18,28 +18,21 @@ public class TestThaiAnalyzer {
 	public static void assertAnalyzesTo(Analyzer a, String input, String[] output) throws Exception {
 		TokenStream ts = a.tokenStream("dummy", new StringReader(input));
 		List<String> tokenList = new ArrayList<String>();
+		CharTermAttribute token = ts.getAttribute(CharTermAttribute.class);
+		ts.reset();
 		while (ts.incrementToken()) {
-			tokenList.add(ts.getAttribute(CharTermAttribute.class).toString());
+			tokenList.add(token.toString());
 		}
-		String[] tokens = tokenList.toArray(new String[tokenList.size()]);
-		// while (ts.incrementToken())
-		// System.out.println(ts.getAttribute(CharTermAttribute.class).toString());
-		// ts.close();
+		System.out.println(tokenList);
+		ts.close();
 	}
 
 	public static void testAnalyzer() throws Exception {
 		ThaiAnalyzer analyzer = new ThaiAnalyzer();
-
-		// assertAnalyzesTo(analyzer, "", new String[] {});
-
-		// assertAnalyzesTo(analyzer, "การที่ได้ต้องแสดงว่างานดี", new String[] { "การ",
-		// "ที่", "ได้", "ต้อง", "แสดง", "ว่า", "งาน", "ดี" });
-
-		// assertAnalyzesTo(analyzer, "บริษัทชื่อ XY&Z - คุยกับ xyz@demo.com", new
-		// String[] { "บริษัท", "ชื่อ", "xy&z", "คุย", "กับ", "xyz@demo.com" });
-
+		assertAnalyzesTo(analyzer, "", new String[] {});
+		assertAnalyzesTo(analyzer, "การที่ได้ต้องแสดงว่างานดี", new String[] { "การ", "ที่", "ได้", "ต้อง", "แสดง", "ว่า", "งาน", "ดี" });
+		assertAnalyzesTo(analyzer, "บริษัทชื่อ XY&Z - คุยกับ xyz@demo.com", new String[] { "บริษัท", "ชื่อ", "xy&z", "คุย", "กับ", "xyz@demo.com" });
 		// English stop words
-		assertAnalyzesTo(analyzer, "ประโยคว่า The quick brown fox jumped over the lazy dogs",
-				new String[] { "ประโยค", "ว่า", "quick", "brown", "fox", "jumped", "over", "lazy", "dogs" });
+		assertAnalyzesTo(analyzer, "ประโยคว่า The quick brown fox jumped over the lazy dogs", new String[] { "ประโยค", "ว่า", "quick", "brown", "fox", "jumped", "over", "lazy", "dogs" });
 	}
 }
